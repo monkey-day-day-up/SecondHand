@@ -96,8 +96,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  $color:red;
 h1, h2 {
   font-weight: normal;
+  color: $color;
 }
 ul {
   list-style-type: none;

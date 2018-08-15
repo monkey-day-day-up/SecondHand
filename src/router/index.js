@@ -8,8 +8,29 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'el-home',
+      component: Home,
+
+    },
+    {
+      path: '/my',
+      name: 'el-my',
+      component: My
+    },
+    {
+      path: '/publish',
+      name: 'el-publish',
+      component:Publish
+    },{
+      path: '/shoppingcart',
+      name: 'el-shoppingcart',
+      component: Shoppingcart
+    },
+
+    {
+      name:'search',
+      path:'/search',
+      component:search,
     }
   ]
 })
