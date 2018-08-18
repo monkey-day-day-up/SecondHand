@@ -1,36 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-
+import home from '@/components/home/home'
+import shoppingcar from '@/components/personalCenter/shoppingcar'
+import release from '@/components/personalCenter/release'
+import order from "@/components/mypage/order"
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'el-home',
-      component: Home,
+      name: 'home',
+      component: home
 
     },
     {
       path: '/my',
-      name: 'el-my',
-      component: My
+      name: 'my',
+      component: order
     },
     {
-      path: '/publish',
-      name: 'el-publish',
-      component:Publish
+      path: '/release',
+      name: 'release',
+      component:release
     },{
-      path: '/shoppingcart',
-      name: 'el-shoppingcart',
-      component: Shoppingcart
+      path: '/shoppingcar',
+      name: 'shoppingcar',
+      component: shoppingcar
     },
 
-    {
-      name:'search',
-      path:'/search',
-      component:search,
-    }
   ]
 })

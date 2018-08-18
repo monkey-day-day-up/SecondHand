@@ -1,19 +1,19 @@
 <template>
   <div>
     <nav class="common-buttom">
-      <router-link class="mui-tab-item " :to="{name:'el-home'}" @click.native="changepic">
+      <router-link class="mui-tab-item " :to="{name:'home'}" @click.native="changepic">
         <img v-bind:src=' src1 '>
         <span :style="{ color: activeColor1 }">首页</span>
       </router-link>
-      <router-link class="mui-tab-item " :to="{name:'el-shoppingcart'}" @click.native="changepic">
+      <router-link class="mui-tab-item " :to="{name:'shoppingcar'}" @click.native="changepic">
         <img v-bind:src=' src4 '>
         <span :style="{ color: activeColor4 }" class="specialspan">购物车</span>
       </router-link>
-      <router-link class="mui-tab-item" :to="{name:'el-publish'}" @click.native="changepic">
+      <router-link class="mui-tab-item" :to="{name:'release'}" @click.native="changepic">
         <img v-bind:src=' src2 '>
         <span :style="{ color: activeColor2 }">发布</span>
       </router-link>
-      <router-link class="mui-tab-item" :to="{name:'el-my'}" @click.native="changepic">
+      <router-link class="mui-tab-item" :to="{name:'my'}" @click.native="changepic">
         <img v-bind:src=' src3 '>
         <span :style="{ color: activeColor3 }">我的</span>
       </router-link>
@@ -50,7 +50,7 @@
           this.activeColor3 = '#bfbfbf';
           this.activeColor4 = '#bfbfbf';
 
-        } else if (this.$route.path === '/publish') {
+        } else if (this.$route.path === '/release') {
           this.src1 = '/static/img/shouye.png';
           this.src2 = '/static/img/fabu1.png';
           this.src3 = '/static/img/wode.png';
@@ -60,7 +60,7 @@
           this.activeColor3 = '#bfbfbf';
           this.activeColor4 = '#bfbfbf';
 
-        } else if (this.$route.path === '/shoppingcart') {
+        } else if (this.$route.path === '/shoppingcar') {
           this.src1 = '/static/img/shouye.png';
           this.src2 = '/static/img/fabu.png';
           this.src3 = '/static/img/wode.png';

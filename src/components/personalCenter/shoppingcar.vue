@@ -1,11 +1,16 @@
 <template>
+  <div>
     我是购物车
+    <commonButtom></commonButtom>
+  </div>
+
 </template>
 
 <script>
-	export default {
-		name: "shoppingcar.vue"
-	}
+  import commonButtom from '@/components/home/commonButtom'
+  export default {
+    components:{commonButtom}
+  }
 </script>
 
 <style scoped>
